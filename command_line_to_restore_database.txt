@@ -1,0 +1,16 @@
+//comando para restaurar backup .sql desde postgresql
+
+pg_restore -h localhost -p 5432 -U postgres -d name_db -v 
+"/locate_your_database/10.70.0.61.backup"
+
+
+pg_restore -h localhost -p 5432 -U postgres -d idempiere -v  "/home/nominadosquebradas/Github/backup-database-dosquebradas/Backup-seiterp-nomina_27_03_2019.sql"
+
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle;
+export PATH=$JAVA_HOME/bin:$PATH;
+export POSTGRES_HOME=/usr/lib/postgresql/9.6;
+export PATH=$POSTGRES_HOME/bin:$PATH;
+export IDEMPIERE_HOME=/opt/idempiere-server;
+export PATH=$PATH:$HOME/bin://usr/lib/jvm/java-8-oracle/bin:/usr/lib/postgresql/9.6/bin;
+
+AD_Window_Trl
